@@ -21,10 +21,9 @@ include:
     shield: splitkb_aurora_sofle_left
     artifact-name: splitkb_aurora_sofle_left
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano@2//zmk
     shield: splitkb_aurora_sofle_right
     artifact-name: splitkb_aurora_sofle_right
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
