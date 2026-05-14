@@ -11,33 +11,7 @@ include:
   #  - a board = the micro-controller unit (MCU), which can be:
   #
   #    - Pro Micro Interconnect:
-  #      - Adafruit KB2040              adafruit_kb2040//zmk
-  #      - BlueMicro840 v1              bluemicro840//zmk
-  #      - Boardsource Blok             boardsource_blok//zmk
-  #      - Mikoto                       mikoto//zmk
-  #      - Puchi-BLE v1                 puchi_ble//zmk
-  #      - QMK Proton-C                 proton_c//zmk
-  #      - SparkFun Pro Micro RP2040    sparkfun_pro_micro_rp2040//zmk
-  #      - nRFMicro nRF52833            nrfmicro/nrf52833/zmk
-  #      - nRFMicro nRF52840            nrfmicro/nrf52840/zmk
-  #      - nRFMicro nRF52840 (flipped)  nrfmicro/nrf52840/flipped_zmk
-  #      - nice!nano                    nice_nano//zmk
   #      - nice!nano v2                 nice_nano@2//zmk
-  #
-  #    - XIAO Interconnect:
-  #      - Adafruit QT Py RP2040        adafruit_qt_py_rp2040//zmk
-  #      - Seeed Studio XIAO RP2040     xiao_rp2040//zmk
-  #      - Seeed Studio XIAO SAMD21     seeeduino_xiao//zmk
-  #      - Seeed Studio XIAO nRF52840   xiao_ble//zmk
-  #
-  #    - BlackPill Interconnect:
-  #      - PillBug                      pillbug//zmk
-  #      - BlackPill F401CC             blackpill_f401cc//zmk
-  #      - BlackPill F401CE             blackpill_f401ce//zmk
-  #      - BlackPill F411CE             blackpill_f411ce//zmk
-  #
-  #    - MakerDiary nRF52840 M.2 Interconnect:
-  #      - nRF52840 M.2 Module          nrf52840_m2//zmk
   #
   # => make sure the `board` field matches the MCU on your keyboard
   ##

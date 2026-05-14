@@ -39,7 +39,7 @@
 //    partial emulation only. QWERTY-intl hosts usually give the best results.
 
 // #define KB_EMULATION_DVORAK           // host: QWERTY
-// #define KB_EMULATION_ERGOL            // host: QWERTY-intl or AZERTY
+#define KB_EMULATION_ERGOL            // host: QWERTY-intl or AZERTY
 // #define KB_EMULATION_QWERTY_LAFAYETTE // host: QWERTY-intl or AZERTY
 
 // [Experimental]
@@ -62,7 +62,7 @@
 
 // Uncomment one of the following lines to pick your preferred hold-tap config.
 
-// #define HT_NONE
+#define HT_NONE
 // #define HT_THUMB_TAPS
 // #define HT_HOME_ROW_MODS  // (default behavior)
 // #define HT_TWO_THUMB_KEYS
