@@ -51,7 +51,17 @@
   #define H_SEMI &kp
 #endif
 
-#if defined HT_HOME_ROW_MODS || defined HT_TWO_THUMB_KEYS
+// FIXME smarter conditions that also consider host layout
+#if defined KB_EMULATION_ERGOL && (defined HT_HOME_ROW_MODS || defined HT_TWO_THUMB_KEYS) 
+  #define HRM_A    H_A A
+  #define HRM_S    H_S S
+  #define HRM_D    H_D E
+  #define HRM_F    H_F N
+  #define HRM_J    H_J R
+  #define HRM_K    H_K T
+  #define HRM_L    H_L I
+  #define HRM_SEMI H_SEMI U
+#elif defined HT_HOME_ROW_MODS || defined HT_TWO_THUMB_KEYS
   #define HRM_A    H_A A
   #define HRM_S    H_S S
   #define HRM_D    H_D D
