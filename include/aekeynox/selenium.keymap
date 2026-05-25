@@ -42,6 +42,7 @@
         &kp LSHIFT ,  &kp Z  &kp X  &kp C  &kp V  &kp B, &kp X , &kp Y , &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH  ,  &kp RSHIFT    ,
                       LTHUMB_TUCK , LTHUMB_HOME , LTHUMB_REACH , RTHUMB_REACH , RTHUMB_HOME , RTHUMB_TUCK
       )>;
+      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder SCRL_UP SCRL_DOWN>;
     };
 
     // 1. NumLock layer -- a NavNum layer that stays on until deactivated without holding any key

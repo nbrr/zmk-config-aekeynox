@@ -1,9 +1,9 @@
 TODO
 
-- [_] pick between vim and classical nav layer
-- [_] FIX THE ENCODERS
-- [_] BLUETOOTH PROFILES
+- [_] Trackpad
 
+- [_] pick between vim and classical nav layer
+- [_] BLUETOOTH PROFILES
 
 
 FIX ALT BACKSPACE
@@ -17,3 +17,5 @@ MAKE MULTI OS COMPATIBL
 FIXME XMONAD LAYOUT CHANGE
 determine properly the shortcuts for the window manager
 
+
+- [x] Fix encoders: ok, encoder activation was not detected because it triggered a too short event.

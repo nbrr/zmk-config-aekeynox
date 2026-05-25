@@ -6,6 +6,33 @@
     LOUT1     LROW1                                                                      RROW1  ROUT1     \
     LOUT2     LROW2                                                                      RROW2  ROUT2     \
     LOUT3     LROW3                              LENC RENC                               RROW3  ROUT3     \
-                     &none  &none  LT1    LT2    LT3   RT3   RT2    RT1    &none  &none
+                     &none  &none  LT1    LT2    LT3   RT3   RT2    RT1    &msc SCRL_UP  &msc SCRL_DOWN
+
+ 
+&sensors {
+    left_encoder {
+        triggers-per-rotation = <72>;
+    };
+
+    right_encoder {
+        triggers-per-rotation = <72>;
+    };
+};
+
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500 
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 140
+
+#include <dt-bindings/zmk/pointing.h>
+
+/ {
+    behaviors {
+        scroll_encoder: scroll_encoder {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+            tap-ms = <20>;
+        };
+    };
+};
 
 #include <aekeynox/selenium.keymap>
