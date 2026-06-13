@@ -1,6 +1,8 @@
 TODO
 
 - [_] Trackpad
+- [_] Right click (maybe add a physical key above 1st column on right split)
+- [_] Ctrl Inser / Ctrl Shift Inser
 
 - [_] pick between vim and classical nav layer
 - [_] BLUETOOTH PROFILES
