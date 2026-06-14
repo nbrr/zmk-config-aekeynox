@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.conf": "kconfig",
+        "*.keymap": "dts"
+    },
+    "files.exclude": {
+        "**/.git": false
+    }
+}

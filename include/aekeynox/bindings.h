@@ -15,14 +15,14 @@
 
 // This macro concatenates Selenium keymap bindings so they can be used by ZMK:
 #ifndef SELENIUM_KEYMAP_BINDINGS
-#define SELENIUM_KEYMAP_BINDINGS(LOUT1,  LROW1,  RROW1,  ROUT1, \
-                                 LOUT2,  LROW2,  RROW2,  ROUT2, \
-                                 LOUT3,  LROW3,  RROW3,  ROUT3, \
-                                 LT1, LT2, LT3,  RT3, RT2, RT1) \
-    LOUT1 LROW1 RROW1 ROUT1 \
-    LOUT2 LROW2 RROW2 ROUT2 \
-    LOUT3 LROW3 RROW3 ROUT3 \
-    LT1 LT2 LT3 RT3 RT2 RT1
+#define SELENIUM_KEYMAP_BINDINGS(LOUT1,  LROW1,             RROW1,  ROUT1, \
+                                 LOUT2,  LROW2,             RROW2,  ROUT2, \
+                                 LOUT3,  LROW3, LENC, RENC, RROW3,  ROUT3, \
+                                      LT1, LT2, LT3,  RT3, RT2, RT1) \
+    LOUT1 LROW1           RROW1 ROUT1 \
+    LOUT2 LROW2           RROW2 ROUT2 \
+    LOUT3 LROW3 LENC RENC RROW3 ROUT3 \
+        LT1 LT2 LT3  RT3 RT2 RT1
 #endif
 
 // This macro can be overridden in /config/*.keymap for keyboards with more or less than 42 keys.

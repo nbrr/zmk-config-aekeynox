@@ -16,14 +16,14 @@
 // #define KB_LAYOUT_DVORAK
 // #define KB_LAYOUT_ERGOL
 // #define KB_LAYOUT_ERGLACE
-// #define KB_LAYOUT_QWERTY_INTL
+#define KB_LAYOUT_QWERTY_INTL
 // #define KB_LAYOUT_QWERTY_LAFAYETTE
 
 // Some keyboard layouts and shortcuts may vary between Windows / macOS / Linux.
 // Uncomment one of the following lines if the host computer doen't run Windows.
 
 // #define MACOS
-// #define LINUX
+#define LINUX
 
 
 /******************************************************************************
@@ -39,7 +39,7 @@
 //    partial emulation only. QWERTY-intl hosts usually give the best results.
 
 // #define KB_EMULATION_DVORAK           // host: QWERTY
-// #define KB_EMULATION_ERGOL            // host: QWERTY-intl or AZERTY
+#define KB_EMULATION_ERGOL            // host: QWERTY-intl or AZERTY
 // #define KB_EMULATION_QWERTY_LAFAYETTE // host: QWERTY-intl or AZERTY
 
 // [Experimental]
@@ -53,7 +53,7 @@
 // Uncomment the following line for an improved dead key support.
 // This only applies to some Hummingbird keymaps and layout emulations.
 
-// #define ENABLE_FANCY_DEAD_KEYS
+#define ENABLE_FANCY_DEAD_KEYS
 
 
 /******************************************************************************
@@ -64,7 +64,7 @@
 
 // #define HT_NONE
 // #define HT_THUMB_TAPS
-// #define HT_HOME_ROW_MODS  // (default behavior)
+#define HT_HOME_ROW_MODS  // (default behavior)
 // #define HT_TWO_THUMB_KEYS
 
 // Timing is key! Keep the default value if unsure.

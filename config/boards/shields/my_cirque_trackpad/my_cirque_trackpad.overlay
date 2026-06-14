@@ -1,0 +1,26 @@
+&nice_view_spi {
+    status = "okay";
+
+    cs-gpios = <&pro_micro 1 GPIO_ACTIVE_HIGH>,   /* nice!view CS */
+               <&gpio1 7 GPIO_ACTIVE_LOW>;        /* Cirque CS — P1.07 */
+
+               
+    glidepoint: glidepoint@1 {
+        compatible = "cirque,pinnacle";
+        reg = <1>;
+        spi-max-frequency = <1000000>;
+        status = "okay";
+        sensitivity = "4x";
+        data-ready-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
+        // sleep;
+        invert-y;
+        primary-tap-enable;
+    };
+};
+
+/ {
+    glidepoint_listener {
+        compatible = "zmk,input-listener";
+        device = <&glidepoint>;
+    };
+};
